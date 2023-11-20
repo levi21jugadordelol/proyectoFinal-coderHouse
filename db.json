@@ -1,3 +1,12 @@
 {
-  "users": []
+  "users": [
+    {
+      "nombre": "leslie",
+      "codigo_alumno": "456",
+      "primeraNota": "11",
+      "segundaNota": "12",
+      "terceraNota": "13",
+      "id": 1
+    }
+  ]
 }
