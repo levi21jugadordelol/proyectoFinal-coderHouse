@@ -1,12 +1,140 @@
 {
   "users": [
     {
+      "nombre": "saul",
+      "codigo_alumno": "0002",
+      "primeraNota": "12",
+      "segundaNota": "13",
+      "terceraNota": "15",
+      "id": 1
+    },
+    {
       "nombre": "leslie",
-      "codigo_alumno": "456",
+      "codigo_alumno": "123",
+      "primeraNota": "12",
+      "segundaNota": "13",
+      "terceraNota": "15",
+      "id": 2
+    },
+    {
+      "nombre": "leslie",
+      "codigo_alumno": "123",
+      "primeraNota": "12",
+      "segundaNota": "13",
+      "terceraNota": "15",
+      "id": 3
+    },
+    {
+      "nombre": "leslie",
+      "codigo_alumno": "123",
+      "primeraNota": "20",
+      "segundaNota": "20",
+      "terceraNota": "20",
+      "id": 4
+    },
+    {
+      "nombre": "aioria",
+      "codigo_alumno": "123",
+      "primeraNota": "20",
+      "segundaNota": "20",
+      "terceraNota": "20",
+      "id": 5
+    },
+    {
+      "nombre": "mu",
+      "codigo_alumno": "9999",
+      "primeraNota": "12",
+      "segundaNota": "13",
+      "terceraNota": "15",
+      "id": 6
+    },
+    {
+      "nombre": "doko",
+      "codigo_alumno": "0000",
+      "primeraNota": "15",
+      "segundaNota": "15",
+      "terceraNota": "15",
+      "id": 7
+    },
+    {
+      "nombre": "mu",
+      "codigo_alumno": "123",
+      "primeraNota": "0",
+      "segundaNota": "0",
+      "terceraNota": "0",
+      "id": 8
+    },
+    {
+      "nombre": "leslie",
+      "codigo_alumno": "0000",
       "primeraNota": "11",
       "segundaNota": "12",
       "terceraNota": "13",
-      "id": 1
+      "id": 9
+    },
+    {
+      "nombre": "leslie",
+      "codigo_alumno": "1111",
+      "primeraNota": "12",
+      "segundaNota": "15",
+      "terceraNota": "13",
+      "id": 10
+    },
+    {
+      "nombre": "paolo",
+      "codigo_alumno": "007",
+      "primeraNota": "15",
+      "segundaNota": "12",
+      "terceraNota": "13",
+      "id": 11
+    },
+    {
+      "nombre": "",
+      "codigo_alumno": "",
+      "primeraNota": "",
+      "segundaNota": "",
+      "terceraNota": "",
+      "id": 12
+    },
+    {
+      "nombre": "",
+      "codigo_alumno": "",
+      "primeraNota": "",
+      "segundaNota": "",
+      "terceraNota": "",
+      "id": 13
+    },
+    {
+      "nombre": "",
+      "codigo_alumno": "",
+      "primeraNota": "",
+      "segundaNota": "",
+      "terceraNota": "",
+      "id": 14
+    },
+    {
+      "nombre": "aioria",
+      "codigo_alumno": "9999",
+      "primeraNota": "12",
+      "segundaNota": "13",
+      "terceraNota": "15",
+      "id": 15
+    },
+    {
+      "nombre": "mu",
+      "codigo_alumno": "0000",
+      "primeraNota": "12",
+      "segundaNota": "15",
+      "terceraNota": "13",
+      "id": 16
+    },
+    {
+      "nombre": "leslie",
+      "codigo_alumno": "0000",
+      "primeraNota": "11",
+      "segundaNota": "12",
+      "terceraNota": "13",
+      "id": 17
     }
   ]
 }

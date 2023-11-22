@@ -159,7 +159,7 @@ const openModal = (alumno) => {
   botonActualizar.addEventListener("click", (e) => {
     e.preventDefault();
     //actualizarTabla(alumno);
-    const cambios = obtenerCambios(alumno);
+    const cambios = obteberCambios(alumno);
     if (cambios) {
       actualizarTabla(alumno, cambios);
     }
@@ -168,40 +168,35 @@ const openModal = (alumno) => {
   modal.classList.toggle("translate");
 };
 
-const obtenerCambios = (alumno) => {
+const obteberCambios = (alumno) => {
   const nuevoNombre = d.getElementById("modal_nombre").value;
   const nuevoCodigo = d.getElementById("modal_codigo").value;
   const nuevaNota1 = d.getElementById("modal_nota_1").value;
   const nuevaNota2 = d.getElementById("modal_nota_2").value;
   const nuevaNota3 = d.getElementById("modal_nota_3").value;
 
-  const cambios = {};
+  //esto me ayudara a comparar con la original
+  const cambios = {
+    nombre: nuevoNombre,
+    codigo: nuevoCodigo,
+    nota1: nuevaNota1,
+    nota2: nuevaNota2,
+    nota3: nuevaNota3,
+  };
 
-  if (alumno.nombre !== nuevoNombre) {
-    cambios.nombre = nuevoNombre;
+  for (const key in cambios) {
+    if (alumno[key] !== cambios[key]) {
+      return cambios; // sie s que hay cambios
+    }
   }
 
-  if (alumno.codigo !== nuevoCodigo) {
-    cambios.codigo = nuevoCodigo;
-  }
-
-  if (alumno.nota1.toString() !== nuevaNota1) {
-    cambios.nota1 = parseFloat(nuevaNota1);
-  }
-
-  if (alumno.nota2.toString() !== nuevaNota2) {
-    cambios.nota2 = parseFloat(nuevaNota2);
-  }
-
-  if (alumno.nota3.toString() !== nuevaNota3) {
-    cambios.nota3 = parseFloat(nuevaNota3);
-  }
-
-  return Object.keys(cambios).length > 0 ? cambios : null;
+  return null; //null si es k no hay cambios
 };
 
 //este es para actualizar los datos en la ventana modal
 const actualizarTabla = (alumno, cambios) => {
+
+
   for (const key in cambios) {
     alumno[key] = cambios[key];
   }
@@ -217,10 +212,6 @@ const eliminar = (id) => {
 
   if (validar) {
     salon.splice(dni, 1);
-    Swal.fire({
-      title: "borrado exitoso",
-      text: "dato del alumno eliminado",
-    });
     enviandoDatos();
   }
 };
@@ -281,3 +272,16 @@ $formulario.addEventListener("submit", async (e) => {
   infoAlumno();
   enviandoDatos();
 });
+
+como evito cuando cambio la modifico la informacion en la ventana modal , no afecte otro campo el cambio
+
+
+
+//el boton guardar puedo quitarlo del formulario y agregarlo junto con el editar y eliminar para usarlo para que se guarde en la db.json
+
+
+
+
+
+
+
